@@ -122,7 +122,7 @@ const data = {
       type: "Self Project",
       description: "End-to-end analytics pipeline with data cleaning, EDA, machine learning modeling (R² ≈ 0.80), and interactive dashboard with KPI cards, YoY tracking, and hierarchical sales analysis.",
       tech: ["Python", "Streamlit", "Plotly", "Random Forest", "Google Colab", "Ngrok"],
-      videoUrl: null,
+      videoUrl: "/videos/6th-Project.mp4",
       thumbnail: "/images/thumb-6.jpg",
       color: "#92400e",
     },
@@ -218,12 +218,13 @@ function Hero() {
         <div>
           <div style={{
             display: "inline-flex", alignItems: "center", gap: 8, padding: "6px 16px",
-            background: C.accentLight, border: "1px solid rgba(59,130,246,0.2)",
+            // background: "white", 
+            border: "1px solid rgba(255, 255, 255, 0.2)",
             borderRadius: 100, fontSize: 12, fontWeight: 700, color: C.accent,
             letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 28,
           }}>
-            <span style={{ width: 6, height: 6, borderRadius: "50%", background: C.accent, animation: "pulse 2s infinite" }} />
-            Available for Work
+            {/* <span style={{ width: 6, height: 6, borderRadius: "50%", background: C.accent, animation: "pulse 2s infinite" }} />
+            Available for Work */}
           </div>
 
           <h1 style={{
