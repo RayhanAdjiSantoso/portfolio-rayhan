@@ -690,7 +690,7 @@ function ContactCard({ c }) {
 function Footer() {
   return (
     <footer style={{ padding: "28px 4rem", borderTop: `1px solid ${C.border}`, textAlign: "center", fontSize: 13, color: C.textFaint, background: C.bg }}>
-      © 2026 Rayhan Adji Santoso · Built with React.js
+      © 2026 Rayhan Adji Santoso
     </footer>
   );
 }
