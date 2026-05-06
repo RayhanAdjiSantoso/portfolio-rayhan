@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 // ─── DATA ────────────────────────────────────────────────────────────────────
 // Foto profil  → letakkan di public/images/profile.jpg
@@ -129,7 +130,7 @@ const data = {
   ],
 };
 
-// ─── CONSTANTS ────────────────────────────────────────────────────────────────
+// ─── CONSTANTS ────────────────────────��──────────────────���────────────────────
 const NAV_LINKS = ["Home", "Skills", "Experience", "Projects", "Contact"];
 
 const C = {
@@ -754,6 +755,7 @@ export default function Portfolio() {
       <Projects />
       <Contact />
       <Footer />
+      <Analytics />
     </div>
   );
 }
