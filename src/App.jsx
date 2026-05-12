@@ -15,22 +15,22 @@ const data = {
   github: "https://github.com/RayhanAdjiSantoso",
   instagram: "https://instagram.com/rayhanadjii",
   skills: [
-    { name: "Python",             icon: "🐍", level: 85, category: "Programming Language" },
+    { name: "Python",             icon: "🐍", level: 90, category: "Programming Language" },
     { name: "R",                  icon: "📊", level: 80, category: "Programming Language" },
-    { name: "SQL",                icon: "🗄️", level: 85, category: "Programming Language" },
-    { name: "JavaScript",         icon: "⚡", level: 78, category: "Programming Language" },
-    { name: "Java",               icon: "☕", level: 65, category: "Programming Language" },
-    { name: "English",            icon: "🇬🇧", level: 88, category: "Language", badge: "TOEFL 557 · TOEIC 790" },
-    { name: "Japanese",           icon: "🇯🇵", level: 45, category: "Language", badge: "JLPT N4" },
-    { name: "React.js",           icon: "⚛️", level: 82, category: "Framework" },
-    { name: "Node.js",            icon: "🟢", level: 75, category: "Framework" },
-    { name: "PostgreSQL",         icon: "🐘", level: 80, category: "Database" },
+    { name: "SQL",                icon: "🗄️", level: 90, category: "Programming Language" },
+    { name: "JavaScript",         icon: "⚡", level: 75, category: "Programming Language" },
+    { name: "Java",               icon: "☕", level: 70, category: "Programming Language" },
+    { name: "English",            icon: "🇬🇧", level: 95, category: "Language", badge: "TOEFL 557 · TOEIC 790" },
+    { name: "Japanese",           icon: "🇯🇵", level: 40, category: "Language", badge: "JLPT N4" },
+    { name: "React.js",           icon: "⚛️", level: 85, category: "Framework" },
+    { name: "Node.js",            icon: "🟢", level: 80, category: "Framework" },
+    { name: "PostgreSQL",         icon: "🐘", level: 90, category: "Database" },
     { name: "MySQL",              icon: "🐬", level: 75, category: "Database" },
-    { name: "Data Analysis",      icon: "🔍", level: 85, category: "Analytics" },
-    { name: "Data Visualization", icon: "📈", level: 82, category: "Analytics" },
+    { name: "Data Analysis",      icon: "🔍", level: 95, category: "Analytics" },
+    { name: "Data Visualization", icon: "📈", level: 95, category: "Analytics" },
     { name: "Machine Learning",   icon: "🤖", level: 75, category: "Analytics" },
-    { name: "Dashboard Dev",      icon: "🖥️", level: 80, category: "Analytics" },
-    { name: "REST API",           icon: "🔗", level: 78, category: "Web Dev" },
+    { name: "Dashboard Dev",      icon: "🖥️", level: 85, category: "Analytics" },
+    { name: "REST API",           icon: "🔗", level: 75, category: "Web Dev" },
   ],
   experience: [
     {
@@ -253,7 +253,7 @@ function Hero() {
             }}
               onMouseEnter={e => { e.target.style.transform = "translateY(-2px)"; e.target.style.boxShadow = "0 10px 30px rgba(59,130,246,0.38)"; }}
               onMouseLeave={e => { e.target.style.transform = "none"; e.target.style.boxShadow = "0 4px 20px rgba(59,130,246,0.28)"; }}>
-              Lihat Project →
+              View Project →
             </button>
             <button onClick={() => scrollTo("contact")} style={{
               padding: "13px 30px", background: "transparent", color: C.text,
@@ -262,7 +262,7 @@ function Hero() {
             }}
               onMouseEnter={e => { e.target.style.borderColor = C.accent; e.target.style.color = C.accent; }}
               onMouseLeave={e => { e.target.style.borderColor = C.border; e.target.style.color = C.text; }}>
-              Hubungi Saya
+              Contact Me
             </button>
           </div>
 
@@ -585,7 +585,7 @@ function VideoModal({ project, onClose }) {
                   background: "rgba(0,0,0,0.5)", cursor: "pointer",
                 }} onClick={() => { setPlaying(true); videoRef.current?.play(); }}>
                   <div style={{ width: 72, height: 72, borderRadius: "50%", background: "rgba(255,255,255,0.95)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 28, paddingLeft: 5 }}>▶</div>
-                  <span style={{ color: "rgba(255,255,255,0.75)", fontSize: 13, fontWeight: 500 }}>Klik untuk memutar video</span>
+                  <span style={{ color: "rgba(255,255,255,0.75)", fontSize: 13, fontWeight: 500 }}>Click to play the video</span>
                 </div>
               )}
             </>
@@ -634,7 +634,7 @@ function Contact() {
       <div style={{ maxWidth: 780, margin: "0 auto", textAlign: "center" }}>
         <SectionTitle title="Let's Connect" subtitle="Get In Touch" />
         <p style={{ fontSize: 17, lineHeight: 1.82, color: C.textMuted, marginBottom: 20 }}>
-          Terbuka untuk peluang kerja, kolaborasi proyek, atau diskusi seputar data science dan pengembangan web. Jangan ragu untuk menghubungi saya!
+          Open to job opportunities, project collaborations, or discussions related to data science and web development. Feel free to reach out!
         </p>
 
         {/* click hint */}
@@ -644,7 +644,7 @@ function Contact() {
           border: "1px solid rgba(59,130,246,0.2)", borderRadius: 100,
           fontSize: 13, color: C.accent, fontWeight: 600,
         }}>
-          <span>👆</span> Klik kartu di bawah untuk langsung membuka kontak
+          <span>👆</span> Click the cards below to open the contact directly
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(210px, 1fr))", gap: 14, marginBottom: 44 }}>
@@ -682,7 +682,7 @@ function ContactCard({ c }) {
       <div style={{ fontSize: 26, marginBottom: 10 }}>{c.icon}</div>
       <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: C.accent, marginBottom: 5 }}>{c.label}</div>
       <div style={{ fontSize: 13, color: hov ? C.accent : C.textMuted, wordBreak: "break-all", fontWeight: hov ? 600 : 400, transition: "color 0.2s" }}>{c.value}</div>
-      <div style={{ marginTop: 10, fontSize: 12, color: C.accent, opacity: hov ? 1 : 0, transition: "opacity 0.2s", fontWeight: 700 }}>Buka →</div>
+      <div style={{ marginTop: 10, fontSize: 12, color: C.accent, opacity: hov ? 1 : 0, transition: "opacity 0.2s", fontWeight: 700 }}>Open →</div>
     </a>
   );
 }
